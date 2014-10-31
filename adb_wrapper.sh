@@ -1,7 +1,5 @@
 #!/bin/bash
-sdk="$(dirname $0)"
-curdir="$(dirname $(readlink $0))"
-orig=$sdk/adb-orig
+orig=$ANDROID_HOME/platform-tools/adb
 
 if [ $# = 0 ]; then
     skip=true

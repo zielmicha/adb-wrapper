@@ -7,11 +7,15 @@ both emulator and device. Can be overriden with -e, -d and -s options.
 Installation
 -------------
 
-The following command will replace adb binary from SDK with wrapper.
+The following command will set the PATH variable to this folder, so that `adb` is redirected
+to the adb_wrapper.sh file here. It does not modify any files in your SDK directory.
 
 ```
 ./install.sh ~/apps/android-sdk-linux
 ```
+
+NOTE: The above command will only export the PATH variable for the currently running shell.
+To make the installation permanent, copy the "export" commands into your ~/.bashrc file.
 
 Usage
 --------------
